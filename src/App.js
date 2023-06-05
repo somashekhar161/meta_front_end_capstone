@@ -1,18 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react"
+import {Routes, Route, BrowserRouter} from "react-router-dom"
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./scenes/Home";
+import Bookings from "./scenes/Bookings";
+import ConfirmedBooking from "./scenes/ConfirmedBooking";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-       hello word
-      </header>
-    </div>
-  );
+    return (
+        <React.Fragment>
+            <Nav/>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/bookings" element={<Bookings/>}/>
+                    <Route path="/confirmedbooking" element={<ConfirmedBooking/>}/>
+                </Routes>
+            </BrowserRouter>
+            <Footer></Footer>
+        </React.Fragment>
+    );
 }
 
 export default App;

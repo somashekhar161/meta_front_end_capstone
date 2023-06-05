@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.font-link {
+  font-family: 'Markanzi';
+  font-family: 'Karla';
+}
+
+h2 {
+  font-family: Markanzi;
+}
+
+h4 {
+  font-family: Markanzi;
+}
+
+h5 {
+  font-family: Karla;
+}
+
+h6 {
+  font-family: Karla;
+}
+
+p {
+  font-family: Karla;
+}
+
+.stackedImage {
+  border-radius: 20%;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
